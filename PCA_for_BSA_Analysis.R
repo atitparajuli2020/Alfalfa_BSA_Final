@@ -38,7 +38,7 @@ filename$inter <- with (filename,interaction(variable1,variable2))
  ## here both health and location are used as factors, the shape is customized manually using scale_shape_manual function
  ## legend of shape is not shown using guide = "none" inside scale_shape_manual while that of color is provided using
  ## scale_color_discrete (name = "Legend title)
- ## PC 1 and PC 2   ## in ggplot stroke is used for controlling the sharpness of the border
+ ## PC 1 and PC 2   
  
  ggplot(pca, aes(PC1,PC2)) + 
    geom_point(aes(shape=factor(Health),col=factor(Location)),size=8,stroke=1) +          ## here the stroke is used to darken the border of the circles (points)
